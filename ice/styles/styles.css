@@ -1,0 +1,68 @@
+body{
+    background-color: #ffecd7;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.content_card{
+    background-color: #008db1;
+    padding: 5px 20px;
+    border: 3px solid;
+    border-radius: 40px;
+    border-color: #004e63;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    margin: auto; 
+}
+.content_card a{
+    text-decoration: none;
+    display: block;
+    color: #91e4fb;
+    font-family: Helvetica, sans-serif;
+    font-size: 85%;
+    text-align: center;
+    margin: 10px 20px;
+}
+.content_card img{
+    width: 70%;
+    height: auto;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    border: 3px solid;
+    border-color: #fffffe;
+
+}
+.content_card ul{
+    margin: 25px 25px;
+    text-align: left;
+    list-style-position: inside;
+    font-size: 15px;
+    font-family: Helvetica, sans-serif, Arial, ;
+    color: #fffffe;
+    gap: 10px;
+    font-weight: bold;
+}
+.content_card ul li{
+    margin-top: 10px;
+}
+#title{
+    font-family: Helvitaca, sans-serif, 'Times New Roman', Times, serif;
+    color: #fffffe;
+    text-align: center;
+    font-size: 2em;
+    margin: 0 auto;
+}
+#quote{
+    text-align: center;
+    color: #ffd783;
+    margin-top: 20px;
+    font-family: "Nanum Brush Script", 'Brush Script MT';
+    width: fit-content;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
