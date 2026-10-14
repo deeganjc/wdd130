@@ -3,13 +3,15 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Fontdiner+Swanky&family=Gloria+Hallelujah&family=Nabla&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #05668D   ;
-  --secondary-color: #427AA1 ;
-  --accent1-color: #EBF2FA;
-  --accent2-color: #00BD9D;
+  --primary-color: #4c0909   ;
+  --secondary-color: #58b09c ;
+  --accent1-color: #dadff7;
+  --accent2-color: #0f4c5c;
+  --accent3-color: #BA9593;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "IM Fell French Canon";
@@ -26,8 +28,16 @@ Fonts are separated by a & */
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396E94;
 }
-
-
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.gloria-hallelujah-regular {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
@@ -78,7 +88,7 @@ p {
   background-color: #999;
 }
 .colors td{
-  width: 25%;
+  width: 20%;
   height: 3em;
 }
 .primary {
@@ -92,6 +102,9 @@ p {
 }
 .accent2{
   background-color: var(--accent2-color);
+}
+.accent3{
+  background-color: var(--accent3-color);
 }
 p.colored {
   background-color: var(--paragraph-background-color);
