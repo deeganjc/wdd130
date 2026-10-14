@@ -42,6 +42,7 @@ Fonts are separated by a & */
 
 body {
   max-width: 960px;
+  height: auto;
   margin: 0 auto;
   padding: 4em;
   font-size: 18px;
@@ -111,14 +112,14 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
   text-align: center;
-  font-size: 1.2em;
-}
-nav  {
   list-style-type: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--nav-background-color); 
+  line-height: 3em;
+  font-size: 1.2em;
 }
 nav a {
   padding:1em;
@@ -134,15 +135,10 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 .sitemap {
-  display: grid;
+  display: flex;
   justify-content: center;
-
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+  align-items: center;
+  flex-direction: column;
 }
 .sitemap > div {
   text-align: center;
@@ -175,4 +171,11 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+#wire{
+  margin: 40px auto;
+}
+#wireframe-img{
+  max-width: 40%;
+  margin: 0 auto;
 }
