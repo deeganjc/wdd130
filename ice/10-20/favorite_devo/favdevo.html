@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <table>
+          <thead>
+            <tr>
+              <th>Speaker</th>
+              <th>Title</th>
+              <th>Location</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Elder Bednar</td>
+              <td>BYU-Idaho 25th Anniversary Devotional</td>
+              <td>I-Center</td>
+              <td>2026</td>
+            </tr>
+            <tr>
+              <td>Elder Fantone</td>
+              <td>The Battle Is the Lord's</td>
+              <td>I-Center</td>
+              <td>2026</td>
+            </tr>
+            <tr>
+              <td>Brother Garrett</td>
+              <td>He Will Make More of You</td>
+              <td>I-Center</td>
+              <td>2026</td>
+            </tr>
+          </tbody>
+        </table>
+        <form>
+          <label for="speaker">Speaker:</label>
+          <input type="text" id="speaker" name="speaker" placeholder="e.g., Elder Bednar" required>
+
+          <label for="devo_title">Title:</label>
+          <input type="text" id="devo_title" name="devo_title" placeholder="e.g., Think Celestial" required>
+
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" placeholder="e.g., I-Center" required>
+
+          <label for="year">Year:</label>
+          <input type="text" id="year" name="year" placeholder="e.g., 2026" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
