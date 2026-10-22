@@ -21,7 +21,6 @@ header{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
     z-index: 10;
 }
 header img{
@@ -50,53 +49,61 @@ header nav a:hover{
     border-radius: 10px;
 }
 .hero{
-   display: grid;
-   grid-template-columns: repeat(20, 1fr);
-   grid-template-rows: auto auto auto;
-   background-color: #dadff7;
-   margin-top: -60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    background-color: #dadff7;
+    padding: 40px;
+    margin-top: 0;
+    min-height: 500px;
+    position: relative;
 }
 .hero #me{
-    display: grid;
-    max-width: 300%;
-    width: 200%;
+    position: absolute;
+    width: 260px;
+    max-width: 40%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
     border-radius: 200px;
-    grid-row: 1/4;
-    grid-column: 15/17;
     z-index: 2;
-    justify-self: center;
-    align-self: center;
 }
 .hero #logo{
-    display: grid;
-    width: 350%;
+    position: absolute;
+    width: 550px;
+    max-width: 50%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
     border-radius: 200px;
-    grid-row: 1/4;
-    grid-column: 15/17;
     opacity: 50%;
     z-index: 1;
-    justify-self: center;
-    align-self: center;
 }
 .hero h1{
-    grid-row: 1;
+    flex: 0 0 55%;
+    max-width: 55%;
     font-size: 4em;
-    grid-column: 4/12;
-    margin-top: 70px;
+    margin: 30px 0 0 0;
     font-family: Chewy, 'Times New Roman', sans-serif ;
+    position: relative;
     color: #4c0909;
+    z-index: 3;
 }
 .hero h2{
-    text-wrap:wrap;
+    position: absolute;
+    top: 180px;
+    left: 40px;
+    width: 40%;
     font-size: 25px;
-    grid-row: 2;
-    grid-column: 4/12;
-    margin-top: -20px;
+    line-height: 1.4;
+    text-align: left;
+    z-index: 3;
 }
 .hero a{
     display: flex;
-    grid-row: 3;
-    grid-column: 4/6;
+    width: 180px;
+    height: 50px;
     text-decoration: none;
     background-color: #58b09c;
     border-radius: 10px;
@@ -105,47 +112,67 @@ header nav a:hover{
     align-items: center;
     color: white;
     font-size: 1.3em;
-    margin-bottom: 10px;
+}
+.hero #hero-button{
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+    width: 180px;
+    height: 50px;
+    z-index: 3;
+    bottom: 60px
 }
 .project-cards{
-    max-width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 25px;
+    padding: 30px 40px 50px;
 }
-.project-cards h1{
+#my-projects {
+    flex: 0 0 100%;
     color:#4c0909;
     text-align: center;
+    margin: 0;
 }
-#first-project{
-    width: 30%;
+.project-cards > div{
+    flex: 1 1 30%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
 }
-#first-project img{
-    display: flexbox;
+.project-cards > div h1{
+    flex: none;
     width: 100%;
+    color: #4c0909;
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
 }
-#second-project{
-    width: 30%;
-}
-#second-project img{
+.project-cards img{
+    display: block;
     width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
-#third-project{
-    width: 30%;
-}
-#third-project img{
+.project-cards > div h2{
     width: 100%;
+    min-height: 70px;
+    margin: 0 0 15px;
+    font-size: 1rem;
+    line-height: 1.4;
 }
 footer{
     display: flex;
     width: 100%;
-    height: 100px;
-    max-height: 40px;
+    min-height: 140px;
     align-items: center;
-    padding: 0 20px;
+    padding: 20px;
     background: #58b09c;
     justify-content: space-between;
-    margin: 20px 0;
-    padding: 20px;
+    margin:0;
 }
 #footer-brand{
     display: flex;
