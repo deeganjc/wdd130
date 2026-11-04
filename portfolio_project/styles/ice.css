@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Fontdiner+Swanky&family=Gloria+Hallelujah&family=Nabla&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 10;
+  font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex:1;
+}
+header{
+    position: static;
+    display: flex;
+    background-color: #adb1c3;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+header img{
+    max-width: 60px;
+    margin: 0;
+}
+header nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 0 20px 0 0;
+    
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 1.5em;
+}
+header nav a:hover{
+    padding: 10px 20px;
+    background-color:#dadff778;
+    border-radius: 10px;
+}
+.first-dotted-line{
+    border: none;
+    border-top: 3px dashed #58b09c;
+    height: 0;
+    max-width: 95%;
+    margin: auto;
+}
+.project-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 25px;
+    padding: 30px 40px 30px;
+}
+.project-cards hr{
+    flex: 0 0 100%;
+    height: 5px;
+    align-self: center;
+    border: none;
+    background-color: #58b09c;
+    margin: 0px auto;
+    background: linear-gradient(to right,
+        transparent 45%,
+        #58b09c 45%,
+        #58b09c 55%,
+        transparent 55%
+    );
+}
+#my-projects {
+    flex: 0 0 100%;
+    color:#4c0909;
+    text-align: center;
+    margin: 0;
+    font-family: Chewy, 'Times New Roman', Times, serif;
+}
+.project-cards > div{
+    flex: 1 1 30%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+}
+.project-cards > div h1{
+    flex: none;
+    color: #4c0909;
+    font-size: 1rem;
+    margin: 15px 0 10px;
+}
+.project-cards img{
+    display: block;
+    width: 80%;
+    height: 200px;
+    margin: 10px auto 5px 15px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.project-cards > div h2{
+    width: 100%;
+    min-height: 70px;
+    margin: 0 0 15px;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+#first-project{
+    border: 5px solid #4c0909;
+    border-radius: 25px;
+}
+#first-project h1{
+    background-color: #0f4c5c;
+    color:#dadff7 ;
+    width: fit-content;
+    justify-content: center;
+    margin: 10px auto 5px 15px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Gloria Hallelujah', 'Times New Roman', Times, serif;
+}
+#first-project h2{
+    margin: 5px auto 0 15px; /* Matches the top margin and auto-centering block mechanics of the others */
+    width: fit-content;
+    height: max-content;
+}
+#first-project a{
+    text-decoration: none;
+    background-color: #58b09c;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto auto 15px 15px;
+    font-size: 1.5em;
+    font-family: 'Sour Gummy', 'Times New Roman', Times, serif;
+    color: white;
+}
+#first-project a:hover{
+    background-color:#4c0909 ;
+}
+#second-project{
+    border: 5px solid #4c0909;
+    border-radius: 25px;
+}
+#second-project h1{
+    background-color: #0f4c5c;
+    font-size: 1rem;
+    color: #dadff7;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 10px auto 0px 15px;
+    border-radius: 5px;
+    font-family: 'Gloria Hallelujah', 'Times New Roman', Times, serif;
+}
+#second-project h2{
+    margin: 5px auto 0 15px; /* Matches the top margin and auto-centering block mechanics of the others */
+    width: fit-content;
+    height: max-content;
+}
+#second-project a{
+    text-decoration: none;
+    background-color: #58b09c;
+    width: fit-content;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Sour Gummy', 'Times New Roman', Times, serif;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto auto 15px 15px;
+}
+#second-project img{
+     object-position: 50% 20%;
+}
+#second-project a:hover{
+    background-color: #4c0909;
+}
+#third-project{
+    border: 5px solid #4c0909;
+    border-radius: 25px;
+}
+#third-project h1{
+    background-color: #0f4c5c;
+    width: fit-content;
+    padding: 5px;
+    font-size: 1em;
+    color: #dadff7;
+    margin: 10px auto 0 15px;
+    border-radius: 5px;
+    font-family: 'Gloria Hallelujah', 'Times New Roman', Times, serif;
+}
+#third-project h2{
+    margin: 5px auto 0 15px; /* Matches the top margin and auto-centering block mechanics of the others */
+    width: fit-content;
+    height: max-content;
+}
+#third-project a{
+    text-decoration: none;
+    background-color: #58b09c;
+    width: fit-content;
+    color: white;
+    padding: 5px;
+    font-size: 1.5rem;
+    margin: auto auto 15px 15px;
+    border-radius: 5px;
+    font-family: 'Sour Gummy', 'Times New Roman', Times, serif;
+}
+#third-project a:hover{
+    background-color: #4c0909;
+}
+footer{
+    display: flex;
+    width: 100%;
+    min-height: 40px;
+    align-items: center;
+    padding: 0px;
+    background: #58b09c;
+    justify-content: space-between;
+    margin: 0;
+}
+#footer-brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.5rem;
+    margin: 0;
+    line-height: 0.2;
+}
+#corner-logo{
+    max-height: 50px;
+    width: 50px;
+}
+#footer-socials{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 20px;
+}
+#footer-socials a img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    display: block;
+}
+
