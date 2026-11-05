@@ -1,0 +1,126 @@
+*{
+    margin: 0 auto;
+}
+body{
+    background: rgb(120, 96, 64);
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 40%;
+    margin-top: 50px;
+    height: 80%;
+    border: 10px solid rgb(7, 7, 157);
+    border-radius: 80px;
+    overflow: hidden;
+}
+#head{
+    background-image: url(images/jesus_feeds_5000.jpeg);
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 25px;
+}
+#head h1{
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px black;
+}
+#head h2{
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px black;
+}
+#formContainer{
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+}
+#myform {
+    display: contents;
+    display: grid;
+}
+#formContainer h3{
+    display: block;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-style: bold;
+}
+#closeBtn{
+    position: absolute;
+    top: 80px;
+    left: 450px;
+    font-size: 1em;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    row-gap: 20px;
+    align-items: center;
+}
+#container label{
+    grid-column: 2/4;
+    text-align: left;
+    margin: 0;
+}
+#container input{
+    grid-column: 6/9;
+    margin: 0;
+}
+#container .gendertitle{
+    grid-column: 2/4;
+    text-align: left;
+    margin: 0;
+    grid-row: 4;
+}
+#container #male{
+    grid-column: 5;
+    margin: 0;
+    grid-row: 4;
+}
+#container #maleradio{
+    grid-column: 6;
+    margin: 0;
+    grid-row: 4;
+    justify-self: start;
+}
+#container #female{
+    grid-column: 7;
+    margin: 0;
+    grid-row: 4;
+}
+#container #femaleradio{
+    grid-column: 8;
+    margin: 0;
+    grid-row: 4;
+    justify-self: start;
+}
+#subscribe{
+    text-align: center;
+    margin-top: 20px;
+}
+#terms{
+    text-align: center;
+    margin-top: 20px;
+}
+#submit{
+    display: flex;
+    margin: 20px auto 20px auto;
+}
+#book_section{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+}
+#book_section img{
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+}
