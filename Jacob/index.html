@@ -15,9 +15,18 @@
                 <img src="images/logo.png" alt="Logo">
             </a>
             <div>
-                <a href="index.html">Home</a>
-                <a href="turbo_taco.html">El Turbo Taco</a>
-                <a href="taco_table.html">The Taco Table</a>
+                <a href="index.html">
+                    Home
+                    <img src="images/bomb.gif" alt="Preview" class="hover-image">
+                </a>
+                <a href="turbo_taco.html">
+                    El Turbo Taco
+                <img src="images/bomb.gif" alt="Preview" class="hover-image">    
+                </a>
+                <a href="taco_table.html">
+                    The Taco Table
+                <img src="images/bomb.gif" alt="Preview" class="hover-image">
+                </a>
             </div>
         </nav>
     </header>
@@ -68,3 +77,15 @@
     
 </footer>
 </html>
+<script>
+  document.querySelectorAll('header nav div a').forEach(link => {
+    const gif = link.querySelector('.hover-image');
+    if (gif) {
+      const gifSrc = gif.getAttribute('src');
+      link.addEventListener('mouseenter', () => {
+        gif.src = ''; // Clears the current animation state
+        gif.src = gifSrc; // Reloads from frame 1
+      });
+    }
+  });
+</script>
