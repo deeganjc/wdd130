@@ -1,13 +1,17 @@
-html{
-    max-width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url("https://use.typekit.net/xpg0ilh.css");
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+html, body{
+    margin: 0;
     min-height: 100%;
-    margin: 0 auto;
 }
+
 body{
     background-color: #f6c95c;
+    min-height: 100vh;
 }
 header{
-    margin: 0 auto;
+    margin: 10px 10px 0 10px  ;
     max-width: 100%;
     max-height: 200px;
     border: 5px solid black;
@@ -24,14 +28,16 @@ header img{
     height: 100px;
 }
 header nav div{
+    margin-right: 100px;
     display: flex;
     font-size: 1.5em;
-    gap: 40px;
+    gap: 70px;
 }
 header nav div a{
     position: relative;
     display: inline-block;
     text-decoration: none;
+    font-family: "poetica-std", sans-serif;
     color: white;
     padding: 5px 12px;
     border-radius: 5px;
@@ -62,8 +68,10 @@ header nav div a:hover .hover-image{
 }
 #hero-text h1{
     font-size: 4em;
+    font-family: "Quintessential", "Poetica", "Times New Roman";
 }
 #hero-text p{
+    font-family: "Baskervville", Georgia, "Times New Roman";
     font-size: 1.5em;
 }
 #hero img{
@@ -94,11 +102,22 @@ header nav div a:hover .hover-image{
 #section_1:hover, #section_2:hover, #section_3:hover, #section_4:hover, #section_5:hover{
       transform: scale(1.1);
 }
+#section_1 h1,
+#section_2 h1,
+#section_3 h1,
+#section_4 h1,
+#section_5 h1 {
+    height: fit-content;
+    font-family: "Poetica-std", sans-serif;
+    font-size: 64px;
+    margin: 0 auto;
+}
 #section_1 h2,
 #section_2 h2,
 #section_3 h2,
 #section_4 h2,
 #section_5 h2 {
+    font-family: "Baskervville", Georgia, "Times New Roman";
     width: 100%;
     margin: 0;
     padding: 10px;
@@ -151,4 +170,52 @@ header nav div a:hover .hover-image{
 #section_5 img{
     width: auto;
     height: 300px;
+}
+footer{
+    display: flex;
+    margin: 30px 0 0 0 ;
+    max-width: 100%;
+    max-height: 200px;
+    min-height: 100px;
+    border: 15px solid #41a332;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#footer_logo{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+#footer_logo img{
+    height: auto;
+    max-width: 100px;
+    align-self: center;
+}
+#footer_links {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+#footer_links a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color:#983d00;
+}
+#footer_links a:hover{
+    color: black;
+}
+#footer_icons{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    margin-right: 50px;
+}
+#facebook img, #instagram img, #twitter img{
+    max-width: 30px;
+    height: auto;
 }

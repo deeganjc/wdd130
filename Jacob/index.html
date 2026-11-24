@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taco Trails</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
     <header>
         <nav>
-            <a id="header-logo" href="index.html">
+            <a id="header-logo" href="index.html" target="_blank">
                 <img src="images/logo.png" alt="Logo">
             </a>
             <div>
-                <a href="index.html">
+                <a href="index.html" target="_blank">
                     Home
                     <img src="images/bomb.gif" alt="Preview" class="hover-image">
                 </a>
-                <a href="turbo_taco.html">
+                <a href="turbo_taco.html" target="_blank">
                     El Turbo Taco
                 <img src="images/bomb.gif" alt="Preview" class="hover-image">    
                 </a>
-                <a href="taco_table.html">
+                <a href="taco_table.html" target="_blank">
                     The Taco Table
                 <img src="images/bomb.gif" alt="Preview" class="hover-image">
                 </a>
@@ -66,16 +66,30 @@
                 <h2>Tacos filled with vegetables, beans, mushrooms, tofu, or other meat-free ingredients.</h2>
             </div>
         </section>
- 
-</body>
 <footer>
     <div id="footer_logo">
         <a>
             <img src="images/logo.png" href="index.html" alt="logo">
         </a>
     </div>
-    
+    <div id="footer_links">
+        <a href="index.html">Home</a>
+        <a href="turbo_taco.html" target="_blank">The Turbo Taco</a>
+        <a href="taco_table.html" target="_blank">The Taco Table</a>
+    </div>
+    <div id="footer_icons">
+        <a href="https://instagram.com" target="_blank" id="instagram">
+            <img src="images/instagram.png">
+        </a>
+        <a href="https://facebook.com" target="_blank" id="facebook">
+            <img src="images/facebook.png">
+        </a>
+        <a href="https://x.com" target="_blank" id="twitter">
+            <img src="images/twitter.png">
+        </a>
+    </div>
 </footer>
+</body>
 </html>
 <script>
   document.querySelectorAll('header nav div a').forEach(link => {
